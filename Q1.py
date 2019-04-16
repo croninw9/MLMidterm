@@ -10,9 +10,9 @@ from keras.layers import Dense, Dropout, Activation, Flatten
 from keras.layers import Conv2D, MaxPooling2D
 import pandas
 
-batch_size = 256
+batch_size = 512
 num_classes = 10
-epochs = 50
+epochs = 75
 
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 print('x_train shape:', x_train.shape)
