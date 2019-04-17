@@ -11,8 +11,9 @@ from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
 
 seed_text = 'you will probably be prepared to admit that you are not exceptional'
-n_chars_to_predict = 10
-seq_length = 20
+characters = [10,50,100,500]
+for n_chars_to_predict in characters:
+   seq_length = 20
 
 # load the model and mapping
 model = load_model('model20.h5')
