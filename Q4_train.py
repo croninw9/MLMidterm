@@ -79,7 +79,7 @@ model.fit(X, y, epochs=100, verbose=1)
 
 
 # save the model and mapping to file
-model.save('model.h5')
+model.save('model5.h5')
 dump(mapping, open('mapping.pkl', 'wb'))
 
 
