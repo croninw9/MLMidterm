@@ -15,7 +15,7 @@ n_chars_to_predict = 10
 seq_length = 5
 
 # load the model and mapping
-model = load_model('model.h5')
+model = load_model('model5.h5')
 mapping = load(open('mapping.pkl', 'rb'))
 
 
