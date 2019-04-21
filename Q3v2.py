@@ -6,6 +6,8 @@ from keras.layers import Input
 from keras.utils import np_utils
 from keras.datasets import cifar10
 
+from keras.utils import multi_gpu_model
+
 epochs = 100
 
 # Get the data
@@ -129,6 +131,8 @@ out    = Dense(10, activation='softmax')(output)
 
 model = Model(inputs = input_img, outputs = out)
 print(model.summary())
+
+model = multi_gpu_model(model, gpus=4)
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 hist = model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=epochs, batch_size=256)
