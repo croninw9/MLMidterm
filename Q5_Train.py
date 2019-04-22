@@ -63,7 +63,7 @@ model.add(Dropout(0.5))
 model.add(Dense(vocab_size, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 print(model.summary())
-model.fit(X, y, epochs=2 , verbose=1, batch_size=4096 )
+model.fit(X, y, epochs=50 , verbose=1, batch_size=4096 )
 
 # Save and test using code from the Q4_Test
 model.save('Q5_model.h5')
