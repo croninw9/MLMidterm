@@ -66,5 +66,5 @@ print(model.summary())
 model.fit(X, y, epochs=10 , verbose=1, batch_size=64 )
 
 # Save and test using code from the Q4_Test
-model.save('LargeLSTM_model.h5')
-dump(mapping, open('LargeLSTM_mapping.pkl', 'wb'))
+model.save('Q5_model.h5')
+dump(mapping, open('Q5_mapping.pkl', 'wb'))
