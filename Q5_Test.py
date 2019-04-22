@@ -9,7 +9,7 @@ from keras.models import load_model
 from keras.utils import to_categorical
 from keras.preprocessing.sequence import pad_sequences
 
-seed_text = 'All these things, and a thousand like them, came to pass in and close upon the dear old year one thousand'
+seed_text = 'until at last the sun touched the tops of the still trees and poured its radiance over'
 n_chars_to_predict = 500
 seq_length = 100
 
